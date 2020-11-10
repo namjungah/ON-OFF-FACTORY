@@ -9,6 +9,15 @@ body{
     font-size : 18px;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul, nav ul {
+    list-style:none;
+}
+
+
 /* -- 네비게이션 -- */
 .top-nav{
     position: fixed;
