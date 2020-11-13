@@ -539,19 +539,19 @@ body{
 }
 
 .verticalSlide:first-child {
-  background: url('./src/howtoplay/1.jpg') no-repeat center;
+  background: url('../src/howtoplay/1.jpg') no-repeat center;
 }
 
 .verticalSlide:nth-of-type(2) {
-  background: url('./src/howtoplay/2.jpg') center;
+  background: url('../src/howtoplay/2.jpg') center;
 }
 
 .verticalSlide:nth-of-type(3) {
-  background: url('./src/howtoplay/3.jpg') center;
+  background: url('../src/howtoplay/3.jpg') center;
 }
 
 .verticalSlide:last-child {
-  background: url('./src/howtoplay/4.jpg') center;
+  background: url('../src/howtoplay/4.jpg') center;
 }
 
 .controls {
