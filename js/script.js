@@ -1,7 +1,5 @@
 (function($) {
 
-
-
 $(document).ready(function(){
 	// 스크립트 로드 확인
 	console.log("Script Load");
@@ -25,19 +23,6 @@ $(document).ready(function(){
 			'transform': 'translate(0px, 0)'  
 		})
 	});
-
-	// // ============ 타이핑 애니메이션 ============ 
-	// $.fn.writeText = function(content) {
-	// 	var contentArray = content.split(""),
-	// 		current = 0,
-	// 		elem = this;
-	// 	setInterval(function() {
-	// 		if(current < contentArray.length) {
-	// 			elem.text(elem.text() + contentArray[current++]);
-	// 		}
-	// 	}, 120);
-	// };
-	// $("#holder").writeText("FACTORY"); 
 
 	var $mouse = $('.home .scroll-btn'),
 		$video = $('.video .video_wrap'),
@@ -79,21 +64,18 @@ $(document).ready(function(){
 			// console.log(index, nextIndex, direction);
 
 			// ============ 페이지 down ============
-			if (index == 1 && direction == 'down') {
-				//console.log("1페이지 애니메이션 작동중");
+			if (index == 1 && direction == 'down') { 
+				//console.log("비디오 애니메이션 작동중");
 				$video.addClass('animated bounceInLeft');
 				$video.fadeIn(500);
 			}
 			else if((index == 1 || index == 2 ) && nextIndex == 3 ) {
-				// console.log("2페이지 애니메이션 작동중");
-				$tiredIcon.addClass('animated bounceInRight');
-				$tiredIcon.fadeIn(500);
-				$about1.fadeIn(500);
+				// console.log("기획 1 애니메이션 작동중");
 				$charts.eq(0).addClass('animated fadeInUp').css('animation-delay', '.05s'); 
 				$charts.eq(1).addClass('animated fadeInUp').css('animation-delay', '.2s');
 			}
 			else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4 ) {
-				//console.log("3페이지 애니메이션 작동중");
+				// console.log("기획 2 애니메이션 작동중");
 				$about2.fadeIn(500);
 			}
 			else if ((index == 1 || index == 2 || index == 3 || index == 4) && nextIndex == 5 ) {
@@ -140,7 +122,6 @@ $(document).ready(function(){
 	
 			}
 
-
 			// ============ 페이지 up ============
 			if (index == 2 && direction == 'up' ) {
 				//console.log("1페이지 애니메이션 up");
@@ -185,10 +166,14 @@ $(document).ready(function(){
 		// 페이지 로드 완료
 		afterLoad: function(anchorLink, index){
             if (index == 1){
-				//console.log("1페이지 로드 완료");
+				//console.log("index 페이지 로드 완료");
 			} 
 			else if (index == 2 ) {
-				//console.log("2페이지 로드 완료");
+				// console.log("기획 1 페이지 로드 완료");
+				$tiredIcon.addClass('animated bounceInRight');
+				$tiredIcon.fadeIn(500);
+				$about1.fadeIn(500);
+
 			}
 			else if (index == 3 ) {
 				//console.log("3페이지 로드 완료");
@@ -199,9 +184,11 @@ $(document).ready(function(){
 					'background-size': '100% 100%',
 					'transition-delay': '0.2s'
 				});
+				
 			}
 			else if (index == 4 ) {
 				//console.log("4페이지 로드 완료");
+				$about2.fadeIn(100);
 				$aboutProjectName.css({
 					'background-size': '100% 100%',
 					'transition-delay': '0.2s'
@@ -217,7 +204,7 @@ $(document).ready(function(){
 			}
 			else if (index == 5 ) {
 				//console.log("5페이지 로드 완료");
-
+				$designLogos.fadeIn(300);
 				$cheeseRight.on('click', function(){
 					$(this).css({
 						'animation-delay': '.1s'
