@@ -1,5 +1,4 @@
 /* 타이포 */
-@import url(/css/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 @import url(//db.onlinewebfonts.com/c/2a32094b74bdd4607c616294a8a90740?family=Peace+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
@@ -539,19 +538,19 @@ body{
 }
 
 .verticalSlide:first-child {
-  background: url('../src/howtoplay/1.jpg') no-repeat center;
+  background: url('../src/howtoplay/howto_1.gif') no-repeat center;
 }
 
 .verticalSlide:nth-of-type(2) {
-  background: url('../src/howtoplay/2.jpg') center;
+  background: url('../src/howtoplay/howto_2.gif') center;
 }
 
 .verticalSlide:nth-of-type(3) {
-  background: url('../src/howtoplay/3.jpg') center;
+  background: url('../src/howtoplay/howto_3.gif') center;
 }
 
 .verticalSlide:last-child {
-  background: url('../src/howtoplay/4.jpg') center;
+  background: url('../src/howtoplay/howto_4.gif') center;
 }
 
 .controls {
@@ -583,6 +582,7 @@ body{
 }
 .button > p {
   line-height: 1.75;
+  word-break: keep-all;
 }
 
 .limitsLine > img{
@@ -603,7 +603,6 @@ body{
 }
 
 .project-2-video{
-  background-color: black;
   width: 50%;
   height: 100%;
 }
@@ -617,7 +616,7 @@ body{
   position: absolute;
   top: 40%;
   right: 8%;
-  width: 34%;
+  width: 35%;
 }
 .project-2-text ul li p{
   font-size: 24px;
@@ -741,19 +740,19 @@ article.detail-area > span.ic-top {
 
 /* profile img */
 #profile1{
-  background-image: url('../src/team_profile/21861095_le.jpg'); 
+  background-image: url('../src/team_profile/le_21861095.jpg'); 
   background-repeat: no-repeat;
 } 
 #profile2{
-  background-image: url('../src/team_profile/21861038_kim.jpg'); 
+  background-image: url('../src/team_profile/kim_21861038.jpg'); 
   background-repeat: no-repeat;
 }
 #profile3{
-  background-image: url('../src/team_profile/21861128_han.jpg'); 
+  background-image: url('../src/team_profile/han_21861128.jpg'); 
   background-repeat: no-repeat;
 }
 #profile4{
-  background-image: url('../src/team_profile/21861049_nam.jpg'); 
+  background-image: url('../src/team_profile/nam_21861049.jpg'); 
   background-repeat: no-repeat;
 }
 

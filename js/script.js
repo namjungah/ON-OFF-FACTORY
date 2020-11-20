@@ -90,7 +90,7 @@ $(document).ready(function(){
 				$ratFaces.eq(1).addClass('animated zoomInLeft').css('animation-delay', '.2s');
 				$ratFaces.eq(2).addClass('animated zoomInLeft').css('animation-delay', '.4s');
 
-				$design2s.fadeIn(1000);
+				$design2s.fadeIn(800);
 				$('.design-2 .design-2-text').addClass('animated bounceInDown');
 			}
 			
@@ -100,7 +100,7 @@ $(document).ready(function(){
 				$catFaces.eq(1).addClass('animated zoomInRight').css('animation-delay', '.2s');
 				$catFaces.eq(2).addClass('animated zoomInRight');
 
-				$design3s.fadeIn(1000);	
+				$design3s.fadeIn(800);	
 				$('.design-3 .design-3-text').addClass('animated bounceInDown');
 
 			}
@@ -112,7 +112,7 @@ $(document).ready(function(){
 			
 			else if ((index == 1 || index == 2 || index == 4|| index == 5|| index == 6|| index == 7|| index == 8) && nextIndex == 9 ) {
 				//console.log("8페이지 애니메이션 작동중");
-				$project2Text.fadeIn(1000);
+				$project2Text.fadeIn(800);
 				$project2Text.addClass('animated fadeInUp');
 
 			}
@@ -125,36 +125,36 @@ $(document).ready(function(){
 			// ============ 페이지 up ============
 			if (index == 2 && direction == 'up' ) {
 				//console.log("1페이지 애니메이션 up");
-				$video.fadeOut(400);			
+				$video.fadeOut(300);			
 			}
 			else if (index == 3 && direction == 'up' ) {
 				//console.log("2페이지 애니메이션 up");
-				$about1.fadeOut(400);
-				$tiredIcon.fadeOut(500);
+				$about1.fadeOut(300);
+				$tiredIcon.fadeOut(300);
 			}
 		
 			else if (index == 4 && direction == 'up') {
 				// console.log("4페이지 애니메이션 up");
-				$about2.fadeOut(500);
+				$about2.fadeOut(300);
 				
 			}else if (index == 5 && direction == 'up') {
 				// console.log("5페이지 애니메이션 up");
-				$designLogos.fadeOut(500);
+				$designLogos.fadeOut(300);
 				
 			}else if (index == 6 && direction == 'up') {
 				// console.log("6페이지 애니메이션 up");
-				$design2s.fadeOut(500);
+				$design2s.fadeOut(300);
 				
 			}else if ((index == 1 || index == 2 || index == 4|| index == 5|| index == 6|| index == 7) && direction == 'up') {
 				//console.log("7페이지 애니메이션 up");
-				$design3s.fadeOut(500);
+				$design3s.fadeOut(300);
 				
 			}else if ((index == 1 || index == 2 || index == 4|| index == 5|| index == 6|| index == 7 || index == 8) && direction == 'up') {
 				// console.log("8페이지 애니메이션 up");
 				
 			}else if ((index == 1 || index == 2 || index == 4|| index == 5|| index == 6|| index == 7|| index == 8|| index == 9) && direction == 'up') {
 				// console.log("9페이지 애니메이션 up");
-				$project2Text.fadeOut(500);
+				$project2Text.fadeOut(300);
 
 			}else if (index == 10 && direction == 'up') {
 				// console.log("10 페이지 애니메이션 up");
@@ -221,16 +221,18 @@ $(document).ready(function(){
 			}
 			else if (index == 6 ) {
 				//console.log("6페이지 로드 완료");
+				$design2s.fadeIn(100);	
 			}
 			else if (index == 7 ) {
 				//console.log("7페이지 로드 완료");
+				$design3s.fadeIn(100);	
 			}
 			else if (index == 8 ) {
 				//console.log("8페이지 로드 완료");
 			}
 			else if (index == 9 ) {
 				//console.log("9페이지 로드 완료");
-				$project2Text.fadeIn(1000);
+				$project2Text.fadeIn(300);
 			}
 			
 			else if (index == 10 ) {
